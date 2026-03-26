@@ -33,7 +33,7 @@ User enters:
           └────────────────────────────┘
 
           ┌──────────────────────────────────────────────────────────┐
-          │ get_dynamic_user_input()                                │
+          │ get_dynamic_user_input()                                 │
           ├──────────────────────────────────────────────────────────┤
           │ Input: multiple IPs + mixed ports (single & ranges)      │
           │ Output dict:                                             │
@@ -50,13 +50,13 @@ Both outputs flow into → SG processing loop.
 ***
 
     ┌──────────────────────────────────────────────────────────────────────────────┐
-    │                         2. FETCH EXISTING SG RULES                            │
+    │                         2. FETCH EXISTING SG RULES                           │
     └──────────────────────────────────────────────────────────────────────────────┘
 
     For each SG ID:
 
               ┌─────────────────────────────────────────────────────────┐
-              │ get_existing_sg_rules(sg_id)                           │
+              │ get_existing_sg_rules(sg_id)                            │
               ├─────────────────────────────────────────────────────────┤
               │ Calls AWS:                                              │
               │   describe_security_groups(GroupIds=[sg_id])            │
