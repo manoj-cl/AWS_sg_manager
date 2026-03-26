@@ -1,8 +1,5 @@
-# ----------------------------------------------------------------------------------------------------------------
 # Example usage of the variable name 'existing_rules' in the function 'rule_exists()'. 
 # The existing rules would likely be retrieved from a database or an API call to a cloud provider's security group service.
-# ----------------------------------------------------------------------------------------------------------------
-
 ```
 existing_rules =
     [
